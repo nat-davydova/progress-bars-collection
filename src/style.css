@@ -75,7 +75,7 @@ body a {
 }
 
 .content {
-    margin: 50px auto;
+    margin: 60px auto;
 }
 
 .container {
@@ -86,4 +86,10 @@ body a {
     max-width: 500px;
     margin: auto;
     justify-content: center;
+}
+
+.example__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 22px;
 }
