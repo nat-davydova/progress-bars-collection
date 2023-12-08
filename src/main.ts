@@ -9,3 +9,8 @@ setProgressBars({
   parentSelector: ".example-2",
   className: "example-2__progress",
 });
+
+setProgressBars({
+  parentSelector: ".example-3",
+  className: "example-3__progress",
+});
