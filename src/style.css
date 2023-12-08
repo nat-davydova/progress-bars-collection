@@ -197,3 +197,35 @@ body a {
             var(--ex2-progress-gradient-3) 66%
     );
 }
+
+/* EXAMPLE #3 */
+
+.example-3__progress {
+    --ex3-progress-height: 20px;
+    --ex3-border-radius: 5px;
+    --ex3-progress-bg: #dcdcdc;
+    --ex3-progress-inner-bg: #8b5cf6;
+    --ex3-progress-stripes-bg: rgba(0,0,0,0.2);
+}
+
+.example-3__progress .progress__bar {
+    height: var(--ex3-progress-height);
+    background-color: var(--ex3-progress-bg);
+    border-radius: var(--ex3-border-radius);
+}
+
+.example-3__progress .progress__bar-inner {
+    background-image: linear-gradient(
+            45deg,
+            transparent 0,
+            transparent 25%,
+            var(--ex3-progress-stripes-bg) 25%,
+            var(--ex3-progress-stripes-bg) 50%,
+            transparent 50%,
+            transparent 75%,
+            var(--ex3-progress-stripes-bg) 75%,
+            var(--ex3-progress-stripes-bg) 100%
+    );
+    background-size: 20px 20px;
+    background-color: var(--ex3-progress-inner-bg);
+}
