@@ -93,3 +93,9 @@ body a {
     margin-bottom: 30px;
     font-size: 22px;
 }
+
+/* PROGRESS STYLES: YOU DON'T NEED THEM!!! */
+
+.progress-bars progress {
+    display: none;
+}
