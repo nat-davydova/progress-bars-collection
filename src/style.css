@@ -106,12 +106,7 @@ body a {
     display: none;
 }
 
-.example-1__progress {
-    --ex1-progress-height: 6px;
-    --ex1-progress-border-radius: calc(var(--ex1-progress-height) / 2);
-    --ex1-progress-bg: #d7d7d7;
-    --ex1-progress-inner-bg: #ff7f00;
-
+.progress {
     position: relative;
     display: flex;
     row-gap: 10px;
@@ -119,22 +114,37 @@ body a {
     justify-content: space-between;
 }
 
-.example-1__progress .progress__bar {
+.progress__bar {
     position: relative;
     flex-shrink: 0;
     width: 100%;
+}
+
+.progress__bar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: inherit;
+}
+
+/* EXAMPLE #1 */
+
+.example-1__progress {
+    --ex1-progress-height: 6px;
+    --ex1-progress-border-radius: calc(var(--ex1-progress-height) / 2);
+    --ex1-progress-bg: #d7d7d7;
+    --ex1-progress-inner-bg: #ff7f00;
+}
+
+.example-1__progress .progress__bar {
     height: var(--ex1-progress-height);
     background-color: var(--ex1-progress-bg);
     border-radius: var(--ex1-progress-border-radius);
 }
 
 .example-1__progress .progress__bar-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: orange;
-    border-radius: inherit;
+    background-color: var(--ex1-progress-inner-bg);
 }
 
 .example-1__progress .progress__title {
@@ -150,3 +160,5 @@ body a {
     text-transform: uppercase;
     letter-spacing: .3px;
 }
+
+/* EXAMPLE #2 */
