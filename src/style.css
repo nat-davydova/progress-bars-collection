@@ -1,10 +1,5 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
 
-html,
-body {
-    font-family: 'Nunito Sans', sans-serif;
-}
-
 :root {
     --transition-duration: .2s;
     --transition-timing-function: linear;
@@ -25,7 +20,7 @@ body {
 /* DEMO STYLES: YOU DON'T NEED THEM!!! */
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: var(--font-size-default);
     color: var(--text-color-default);
 }
@@ -88,6 +83,10 @@ body a {
     justify-content: center;
 }
 
+.example {
+    width: 100%;
+}
+
 .example__title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -96,6 +95,58 @@ body a {
 
 /* PROGRESS STYLES: YOU DON'T NEED THEM!!! */
 
+.progress-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
 .progress-bars progress {
     display: none;
+}
+
+.example-1__progress {
+    --ex1-progress-height: 6px;
+    --ex1-progress-border-radius: calc(var(--ex1-progress-height) / 2);
+    --ex1-progress-bg: #d7d7d7;
+    --ex1-progress-inner-bg: #ff7f00;
+
+    position: relative;
+    display: flex;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.example-1__progress .progress__bar {
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    height: var(--ex1-progress-height);
+    background-color: var(--ex1-progress-bg);
+    border-radius: var(--ex1-progress-border-radius);
+}
+
+.example-1__progress .progress__bar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: orange;
+    border-radius: inherit;
+}
+
+.example-1__progress .progress__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.example-1__progress .progress__percentage {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3px;
 }
