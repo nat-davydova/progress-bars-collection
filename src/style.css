@@ -128,6 +128,20 @@ body a {
     border-radius: inherit;
 }
 
+.progress__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.progress__percentage {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+}
+
 /* EXAMPLE #1 */
 
 .example-1__progress {
@@ -162,3 +176,24 @@ body a {
 }
 
 /* EXAMPLE #2 */
+
+.example-2__progress {
+    --ex2-progress-height: 8px;
+    --ex2-progress-gradient-1: #b465da;
+    --ex2-progress-gradient-2: #cf6cc9;
+    --ex2-progress-gradient-3: #ee609c;
+}
+
+.example-2__progress .progress__bar {
+    height: var(--ex2-progress-height);
+    background-color: transparent;
+}
+
+.example-2__progress .progress__bar-inner {
+    background-image: linear-gradient(
+            to right,
+            var(--ex2-progress-gradient-1) 0%,
+            var(--ex2-progress-gradient-2) 33%,
+            var(--ex2-progress-gradient-3) 66%
+    );
+}
