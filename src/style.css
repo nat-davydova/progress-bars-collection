@@ -73,3 +73,17 @@ body a {
     margin-bottom: 10px;
     font-weight: 600;
 }
+
+.content {
+    margin: 50px auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    justify-content: center;
+}
