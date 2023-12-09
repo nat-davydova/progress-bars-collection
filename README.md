@@ -70,3 +70,20 @@ A progress bar concept where we grab a `<progress />` element and create a multi
 * CSS3
 * JS (ES6+)
 * Vite
+
+## How to run locally
+
+* install dependencies
+```js
+npm install
+// or
+yarn
+```
+* start local server via Vite
+```js
+npm start dev
+
+// or
+
+yarn dev
+```
