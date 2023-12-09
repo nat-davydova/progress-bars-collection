@@ -235,7 +235,7 @@ body a {
 .example-4__progress {
     --ex4-progress-height: 30px;
     --ex4-progress-bar-height: calc(var(--ex4-progress-height) - var(--ex-4-border-size) * 2 - var(--ex4-progress-bar-offset));
-    --ex4-progress-bar-width: calc((100% - var(--ex4-progress-bar-offset) * 2) *1px);
+    --ex4-progress-bar-max-width: calc(100% - var(--ex4-progress-bar-offset));
     --ex4-progress-bar-offset: 8px;
     --ex4-border-radius: calc(var(--ex4-progress-height) / 2);
     --ex-4-border-size: 4px;
@@ -260,6 +260,7 @@ body a {
 .example-4__progress .progress__bar-inner {
     top: 50%;
     left: calc(var(--ex4-progress-bar-offset) / 2);
+    max-width: var(--ex4-progress-bar-max-width);
     height: var(--ex4-progress-bar-height);
     transform: translateY(-50%);
     background-image: linear-gradient(
