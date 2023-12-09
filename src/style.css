@@ -121,6 +121,8 @@ body a {
 .progress__bar {
     position: relative;
     flex-shrink: 0;
+    height: 6px;
+    background-color: lightgrey;
     width: 100%;
 }
 
@@ -129,6 +131,7 @@ body a {
     top: 0;
     left: 0;
     height: 100%;
+    background-color: green;
     border-radius: inherit;
 }
 
