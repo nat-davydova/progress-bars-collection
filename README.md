@@ -6,7 +6,7 @@ A progress bar concept where we grab a `<progress />` element and create a multi
 
 <img width="444" alt="image" src="https://github.com/nat-davydova/progress-bars-collection/assets/52240221/4db1d24f-4719-4f93-8778-16a69abd08c0">
 <br/>
-<img width="444" alt="image" src="https://github.com/nat-davydova/progress-bars-collection/assets/52240221/2bb9171e-4fc6-45c7-9718-c3bd4e1778fc">
+<img width="444" alt="image" src="https://github.com/nat-davydova/progress-bars-collection/assets/52240221/ace7cf9d-f3e8-4835-891f-c397c94c1769">
 
 ## How To Use
 
