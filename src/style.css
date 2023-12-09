@@ -245,7 +245,7 @@ body a {
     --ex4-progress-bar-max-width: calc(100% - var(--ex4-progress-bar-offset));
     --ex4-progress-bar-offset: 8px;
     --ex4-border-radius: calc(var(--ex4-progress-height) / 2);
-    --ex-4-border-size: 4px;
+    --ex-4-border-size: 3px;
     --ex4-progress-gradient-1: #40c9ff;
     --ex4-progress-gradient-2: #e81cff;
     --ex4-progress-bg: #fff;
