@@ -40,18 +40,29 @@ A progress bar concept where we grab a `<progress />` element and create a multi
   </div>
   ```
 * all the `<progress />` attributes **are crucial** and you should add all of them;
-* 'progress-bars' className is crucial, keep it please;
+* `progress-bars` class name is crucial, keep it please;
 
 ### Scripts
 * if you use **Typescript**, you should copy `src/progress.ts` to your code;
-* if you use JavaScript, you should copy code from `scripts.js` or import the whole file to your HTML:
+* if you use **JavaScript**, you should copy code from `src/scripts.js` or import the whole file to your HTML:
   ```html
   <html>
     <head></head>
     <body>
-      <!--
+      <!-- all your HTML code -->
+      <script type="module" src="/src/scripts.js"></script>
     </body>
   </html>
+  ```
+* call the init function:
+  ```js
+  setProgressBars({
+    // here you should provide a parent progress bars container (it can be not only direct parent, but an ancestor any level above)
+    parentSelector: ".your-parent-selector", //can be classname or id
+    // optional parameter: a classname which will be applied to progress bar parent container for convenient theming
+    // if you want to use predefined styles, you should use it like "example-1__progress" (1 - 4)
+    className: "example-4__progress",
+  });
   ```
 
 ## Stack
