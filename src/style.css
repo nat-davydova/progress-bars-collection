@@ -97,7 +97,7 @@ body a {
     font-size: 22px;
 }
 
-/* PROGRESS STYLES: YOU DON'T NEED THEM!!! */
+/* PROGRESS STYLES: YOU NEED THEM!!! */
 
 .progress-bars {
     display: flex;
