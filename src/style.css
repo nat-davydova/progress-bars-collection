@@ -19,6 +19,10 @@
 
 /* DEMO STYLES: YOU DON'T NEED THEM!!! */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: var(--font-size-default);
