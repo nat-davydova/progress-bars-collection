@@ -229,3 +229,41 @@ body a {
     background-size: 20px 20px;
     background-color: var(--ex3-progress-inner-bg);
 }
+
+/* EXAMPLE #4 */
+
+.example-4__progress {
+    --ex4-progress-height: 30px;
+    --ex4-progress-bar-height: calc(var(--ex4-progress-height) - var(--ex-4-border-size) * 2 - var(--ex4-progress-bar-offset));
+    --ex4-progress-bar-width: calc((100% - var(--ex4-progress-bar-offset) * 2) *1px);
+    --ex4-progress-bar-offset: 8px;
+    --ex4-border-radius: calc(var(--ex4-progress-height) / 2);
+    --ex-4-border-size: 4px;
+    --ex4-progress-gradient-1: #40c9ff;
+    --ex4-progress-gradient-2: #e81cff;
+    --ex4-progress-bg: #fff;
+}
+
+.example-4__progress .progress__bar {
+    height: var(--ex4-progress-height);
+    background:
+            linear-gradient(var(--ex4-progress-bg), var(--ex4-progress-bg)) padding-box,
+            linear-gradient(
+                    to left,
+                    var(--ex4-progress-gradient-1) 0%,
+                    var(--ex4-progress-gradient-2) 100%)
+            border-box;
+    border: var(--ex-4-border-size) solid transparent;
+    border-radius: var(--ex4-border-radius);
+}
+
+.example-4__progress .progress__bar-inner {
+    top: 50%;
+    left: calc(var(--ex4-progress-bar-offset) / 2);
+    height: var(--ex4-progress-bar-height);
+    transform: translateY(-50%);
+    background-image: linear-gradient(
+            to left,
+            var(--ex4-progress-gradient-1) 0%,
+            var(--ex4-progress-gradient-2) 100%);
+}
